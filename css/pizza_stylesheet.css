@@ -1,0 +1,28 @@
+.nav-link{
+    text-decoration-color:black; 
+}
+.navbar-brand{
+    text-decoration-color:#f5f5f5
+}
+
+
+.jumbo-about{
+    background-image:url(https://static1.squarespace.com/static/564a126ae4b008b30b4c7441/56a7b7208b38d4aa0442fd07/56c219798a65e2cef8706ec2/1516910588643/?format=1500w);
+    margin:20px;
+}
+.jumbotron{
+    background-color:transparent;
+    
+}
+.card{
+    border: 2px;
+}
+.order-button{
+    
+    align-self: center;
+
+}
+.div-color{
+        
+    width: 100%;
+}

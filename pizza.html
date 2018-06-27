@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Daniel's pizza</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/pizza_stylesheet.css">
+	<!-- End Bootstrap CSS-->
+    </head>
+    
+	<body>
+        <div class="containers">
+        
+            <!-- header -->
+            <div class="jumbotron jumbotron-fluid text-center  hidden-md-down">
+                <div class="container">
+                    <h1 class="display-4">Fired up Pizza</h1>
+                    <img src="./img/pizza1.jpg" class="img-fluid" alt="Responsive image">
+                    <p class="lead">Sacramento's Best Pizza!</p>
+                </div>
+            </div>
+    
+            <!-- end header -->
+
+            <!-- menu -->
+            <div class="container">
+                <h1 class="title text-center my-4 " style="font-family:Palatino, Arial, sans-serif; font-weight:300;">Order</h1>
+                <div class="row">                   
+                    <div class="col-sm">
+                            <div class="card" style="width: 10rem;">
+                                    <img class="card-img-top img-fluid" src="./img/dough.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                      <h5 class="card-title text-center">Size</h5>
+                                      <input onclick="addSize(this)" class="size" type="radio" name="Size" value="personal">Personal Pizza <br>
+                                      <input onclick="addSize(this)" class="size" type="radio" name="Size" value="medium"> medium pizza <br>
+                                      <input onclick="addSize(this)" class="size" type="radio" name="Size" value="large"> large pizza <br>
+                                      <input onclick="addSize(this)" class="size" type="radio" name="Size" value="extra-Large"> Extra-Large Pizza <br><br>
+                                      
+                                </div>
+                            </div>  
+                    </div>
+                   
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                                <img class="card-img-top img-fluid" src="./img/pizza4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                  <h5 class="card-title text-center">Crust</h5>
+                                  <input onclick="addCrust(this)" class="crust" type="radio" name="Crust" value="Plain crust"> Plain crust <br>
+                                  <input onclick="addCrust(this)" class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust <br>
+                                  <input onclick="addCrust(this)" class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
+                                  <input onclick="addCrust(this)" class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust <br>
+                                  <input onclick="addCrust(this)" class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust <br> <br>
+                                  
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col-sm">
+                            <div class="card" style="width: 10rem;">
+                                    <img class="card-img-top img-fluid" src="./img/pizza2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                      <h5 class="card-title text-center">Cheese</h5>
+                                      <input onclick="addCheese(this)" class="cheese" type="radio" name="Cheese" value="Regular"> Regular <br>
+                                      <input onclick="addCheese(this)" class="cheese" type="radio" name="Cheese" value="no cheese"> No Cheese <br>
+                                      <input onclick="addCheese(this)" class="cheese" type="radio" name="Cheese" value="extra cheese"> Extra cheese<br> <br>
+                                      
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="col-sm">
+                            <div class="card" style="width: 10rem;">
+                                    <img class="card-img-top img-fluid" src="./img/pizza6.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                      <h5 class="card-title text-center">Sauce</h5>
+                                      <input onclick="addSauce(this)" class="sauce" type="radio" name="Sauce" value="Marinara sauce"> Marinara sauce <br>
+                                      <input onclick="addSauce(this)" class="sauce" type="radio" name="Sauce" value="White sauce"> White sauce<br>
+                                      <input onclick="addSauce(this)" class="sauce" type="radio" name="Sauce" value="Barbeque sauce"> Barbeque sauce <br>
+                                      <input onclick="addSauce(this)" class="sauce" type="radio" name="Sauce" value="No sauce"> No sauce <br> <br>
+                                      
+                                    
+
+                                      
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="col-sm">
+                            <div class="card" style="width: 10rem;">
+                                    <img class="card-img-top img-fluid" src="./img/pizza3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                      <h5 class="card-title text-center">Meats</h5>
+                                      <input onclick="addMeat(this)" id="meat1" class="meats" type="checkbox" name="meat" value="Pepperoni"> Pepperoni <br>
+                                      <input onclick="addMeat(this)" class="meats" type="checkbox" name="meat" value="Sausage"> Sausage <br>
+                                      <input onclick="addMeat(this)" class="meats" type="checkbox" name="meat" value="Candadian Bacon"> Candadian Bacon<br>
+                                      <input onclick="addMeat(this)" class="meats" type="checkbox" name="meat" value="Ground Beef"> Ground Beef <br>
+                                      <input onclick="addMeat(this)" class="meats" type="checkbox" name="meat" value="Anchovy"> Anchovy <br>
+                                      <input onclick="addMeat(this)" class="meats" type="checkbox" name="meat" value="Chicken"> Chicken<br> <br>
+                                     
+
+                                      
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="col-sm">
+                            <div class="card" style="width: 10rem;">
+                                    <img class="card-img-top img-fluid" src="./img/pizza5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                      <h5 class="card-title text-center">Vegetables</h5>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Tomatoes"> Tomatoes <br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Onions"> Onions <br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Olives"> Olives<br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Green Peppers"> Green Peppers <br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Mushrooms"> Mushrooms <br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Pineapples"> Pineapples <br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Spinach"> Spinach <br>
+                                      <input onclick="addVeggie(this)" class="veggies" type="checkbox" name="veggie" value="Jalepenos"> Jalepenos <br> <br>
+                                      
+                                      
+                                </div>
+                            </div>  
+                    </div>
+                    
+                   
+
+                    <!-- Button trigger -->
+                    <div class="d-flex  flex-row justify-content-center div-color">
+                        <button type="button" class="btn btn-dark align-self-center order-button" onclick="totalCost(); getReceipt()" value="place order">Check Out</button>
+                    </div>
+
+                    <!-- end button trigger -->
+                                 
+                </div>
+            </div>
+
+            <!-- reciept -->
+            <br>
+            <br>
+            <table class="table table-striped">
+                    <thead></thead>                   
+                    <tbody>
+
+                      <tr>
+                        <th id="Items" scope="col">Items</th>
+                        <th id="ItemPrice" scope="row">Price</th>
+                        <td></td> 
+                      </tr>
+
+
+                      <tr>
+                        <th id="orderTotal" scope="row">Total   </th>
+                        <td></td> 
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+
+
+            <!-- end reciept -->
+
+
+            <!-- about us -->
+            <div class="jumbotron jumbo-about">
+                    <div class="jumbotron">
+                    <h1 class="display-4" style="color:white">ABOUT US</h1>
+                    <p class="lead" style="color:white">Simply put, we are Fired up about pizza.</p>
+                    <hr class="my-4">
+                    
+                    <p class="lead">
+                      <a class="btn btn-secondary btn-lg" href="#" role="button">Our Story</a>
+                    </p>
+                  </div>
+            <!-- end ABOUT US -->
+
+
+
+        </div>
+    
+        
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <script src="pizza.js"></script>
+
+    </body>
+    
+</html>
